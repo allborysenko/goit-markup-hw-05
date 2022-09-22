@@ -281,6 +281,7 @@ body {
 .workimg {
     display: block;
     max-width: 100%;
+    
 }
 
 .what-to-do {
@@ -303,6 +304,30 @@ body {
     line-height: 1.17;
     text-align: center;
 }
+
+ .what-to-do .item{
+    position: relative;
+}
+
+.examples-title{
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+    display: inline-flex;
+    bottom: 0;
+
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text);
+   
+}
+
 
 /* Наша команда  */
 .ourteam {
