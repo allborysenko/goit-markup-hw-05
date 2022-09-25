@@ -698,10 +698,11 @@ body {
 .icon-close{
     transition: fill var(--time-function);
 }
-.close-button:hover{
-    cursor: pointer;
-}
 .close-button:hover .icon-close {
     fill: var(--accent);
 }
+.close-button:hover{
+    cursor: pointer;
+}
+
 
