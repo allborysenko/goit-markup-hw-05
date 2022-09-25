@@ -657,7 +657,12 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--time-function);
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
 }
 .modal {
     width: 528px;
@@ -668,14 +673,13 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    opacity: 1;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--time-function);
+    
 }
 .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scale(1.2);
-    opacity: 0;
-}
+   }
 
 .close-button {
     position: absolute;
@@ -701,11 +705,3 @@ body {
     fill: var(--accent);
 }
 
-.backdrop.is-hidden {    
-    opacity: 0;
-    pointer-events: none;
-}
-
-.no-scroll {
-    overflow: hidden;
-}
